@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./index.module.scss";
 
-import Image1 from "../../img/items/item1.png";
-import Image2 from "../../img/items/item2.png";
-import Image3 from "../../img/items/item3.png";
-import Image4 from "../../img/items/item4.png";
-import Image5 from "../../img/items/item5.png";
-import Image6 from "../../img/items/item6.png";
-import Image7 from "../../img/items/item7.png";
-import Image8 from "../../img/items/item8.png";
-import Image9 from "../../img/items/item9.png";
+import Image1 from "../../img/items/item1.jpg";
+import Image2 from "../../img/items/item2.jpg";
+import Image3 from "../../img/items/item3.jpg";
+import Image4 from "../../img/items/item4.jpg";
+import Image5 from "../../img/items/item5.jpg";
+import Image6 from "../../img/items/item6.jpg";
+import Image7 from "../../img/items/item7.jpg";
+import Image8 from "../../img/items/item8.jpg";
+import Image9 from "../../img/items/item9.jpg";
 import GalleryItem from "../GalleryItem";
 
 export default () => (
