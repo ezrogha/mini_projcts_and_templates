@@ -10,6 +10,12 @@ import MyWork from "./components/MyWork";
 import Contact from "./components/Contact";
 
 export default class index extends Component {
+  constructor(props) {
+    super(props)
+  
+    document.title = "Portfolio"
+  }
+  
   state = {
     atHome: true
   }

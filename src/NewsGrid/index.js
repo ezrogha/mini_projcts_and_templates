@@ -11,6 +11,14 @@ import Styles from './css/main.module.css'
 import { NavLink, BrowserRouter, Route } from 'react-router-dom';
 
 export default class index extends Component {
+  constructor(props) {
+    super(props)
+    document.title = "NewsGrid"
+    this.state = {
+       
+    }
+  }
+  
   render() {
     const { body, navbar, social, navItems, logo, container, bg_dark, bg_primary, footer, bg_secondary, btn } = Styles
     return (
