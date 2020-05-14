@@ -1,0 +1,48 @@
+@import '../../css/utilities';
+@import '../../css/variables';
+
+.creative {
+
+  .iconContainer {
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.2rem;
+    border-radius: 50%;
+    position: relative;
+    transition: all .5s ease;
+
+    &:hover {
+      background-color: $primary-color;
+
+      & > div {
+        background-color: black;
+      }
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    div {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      height: 30px;
+      width: 30px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      font-size: .9rem;
+      font-family: serif;
+      font-weight: bold;
+      color: white;
+      transition: all 1s ease;
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+@import '../../css/variables';
+@import '../../css/utilities';
+@import '../../css/mobile';
+
+#navbar {
+  background: url('../../img/showcase.jpg') no-repeat 20% 30%/cover;
+  border-bottom: 3px solid $primary-color;
+
+  nav {
+    @extend %navbar
+  }
+}

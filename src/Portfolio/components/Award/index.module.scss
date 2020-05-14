@@ -1,0 +1,15 @@
+@import '../../css/variables';
+@import '../../css/utilities';
+
+.award {
+  text-align: center;
+
+  & > * {
+    margin: 0.3rem 0;
+  }
+
+  .icon {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+}

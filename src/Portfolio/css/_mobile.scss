@@ -1,0 +1,84 @@
+@media (max-width: 800px) {
+  
+  #header {
+
+    .showcase {
+      font-size: .8rem;
+    }
+  }
+
+  #specialize {
+    
+    .container {
+
+      & > div:last-child {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    & > div:nth-child(2) {
+
+      ul {
+
+        li:first-child {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  #aboutMe {
+
+    .testimonials {
+     
+      .container {
+  
+        & > div:last-child {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+
+  }
+  
+
+}
+
+@media (max-width: 500px) {
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  #header {
+
+    #navbar {
+      font-size: 0.9rem;
+      padding: 0.3rem;
+      flex-direction: column;
+    }
+
+    .showcase {
+      font-size: .5rem;
+    }
+  }
+
+  #navbar {
+
+    nav {
+      font-size: 0.9rem;
+      padding: 0.3rem;
+      flex-direction: column;
+    }
+  }
+
+  #specialize {
+
+    .container {
+
+      & > div:last-child {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

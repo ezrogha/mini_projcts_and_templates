@@ -1,0 +1,43 @@
+@import '../../css/variables';
+@import '../../css/utilities';
+
+.myWork {
+  padding: 3rem 1rem 3rem 1rem;
+  text-align: center;
+
+  .container {
+    & > * {
+      margin-bottom: 1.8rem;
+    }
+
+    .bottomLine {
+      // margin-bottom: 1rem;
+    }
+    
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+}
+
+@media (max-width: 800px) {
+  .myWork {
+
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .myWork {
+
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import '../../css/variables';
+@import '../../css/utilities';
+
+.contact {
+  padding-top: 3rem;
+  text-align: center;
+
+  .container {
+
+    & > * {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  .form {
+    width: 100%;
+    // margin: 0 1rem 2rem 1rem;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-areas:
+    'name email'
+    'subject phone'
+    'message message';
+    grid-gap: 1rem;
+
+    & > .name {
+      grid-area: name;
+    }
+
+    & > .email {
+      grid-area: email;
+    }
+
+    & > .subject {
+      grid-area: subject;
+    }
+
+    & > .phone {
+      grid-area: phone;
+    }
+
+    & > .message {
+      grid-area: message;
+    }
+
+    input, textarea {
+      padding: .5rem;
+      font-size: 0.9rem;
+    }
+
+    input:focus, textarea:focus {
+      outline: none !important;
+      border: 1px solid $primary-color;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+  }
+  
+  button {
+    width: 50%;
+    padding: .8rem;
+    border: none;
+    color: white;
+    background-color: #333;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $primary-color;
+      // opacity: 0.4;
+    }
+  }
+
+
+  & > div:nth-child(2) {
+    @extend %grid-column-three;
+    color: white;
+    background-color: #333;
+    padding: 3rem 0;
+
+    & > div {
+
+      & > *:first-child {
+        font-size: 2rem;
+      }
+
+      & > * {
+        padding-bottom: .5rem;
+      }
+    }
+  }
+
+
+  & > div:nth-child(3) {
+    background-color: $primary-color;
+    padding: 6rem 0;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 4rem;
+  }
+  
+}
+
+
+@media (max-width: 500px) {
+  .contact {
+
+    .form {
+      grid-template-areas: 
+      'name'
+      'email'
+      'subject'
+      'phone'
+      'message';
+    }
+
+    & > div:nth-child(2) {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+}

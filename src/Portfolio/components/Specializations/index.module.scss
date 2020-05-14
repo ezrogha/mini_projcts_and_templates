@@ -1,0 +1,68 @@
+@import '../../css/variables';
+@import '../../css/utilities';
+@import '../../css/mobile';
+
+#specialize {
+  padding: 3rem 0 1rem 0;
+
+  & > .container {
+    text-align: center;
+    padding: 0 1rem;
+
+    & > * {
+      padding-bottom: 2.2rem;
+    }
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    & > div:last-child {
+      @extend %grid-column-four;
+      grid-gap: 2rem;
+    }
+  }
+
+  & > div:nth-child(2) {
+    @extend %grid-column-four;
+    text-align: center;
+    padding: 1rem 0;
+
+    ul:nth-child(odd) {
+      background-color: #eeeeee;
+    }
+
+    ul:nth-child(even) {
+      background-color: #cccccc;
+    }
+
+    ul {
+      list-style: none;
+      padding: 2rem 0;
+      font-weight: 500;
+
+      & > * {
+        margin-bottom: .5rem;
+      }
+
+      li:first-child {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  & > div:last-child {
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  #specialize {
+
+    & > div:nth-child(2) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+}
